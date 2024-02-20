@@ -1,0 +1,214 @@
+/* general Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+    color: white;
+}
+body{
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0,1.0)),url("./background/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+/* head1 */
+.head1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%; 
+    
+}
+.log{
+    color:white ;
+    border: 5px dashed white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.0em;
+    height: 50px;
+    width: 80px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+/* nav Styles */
+a{
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+
+}
+li{
+list-style-type: none;
+font-size: 1.1em;
+padding-top: 1.5em;
+padding-bottom:1.5em ;
+padding-left: 1.6em;
+}
+
+nav ol {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -40px;
+    margin-top: 2%;
+    background-color:rgb(15, 15, 19);
+    width: auto;
+}
+.log:hover{
+    color:orange;
+    border-color:orange ;
+    box-shadow: 3px 0px 4px White;
+}
+.cart{
+    width: 70px     ;
+    padding:10px 20px;
+    transition: 0.4s ease-in-out;
+}
+.last{
+    margin-left: 32%;
+}
+ol{
+    padding-left: 6%;
+}
+sup{ 
+    color: orange;
+}
+a:hover{
+color:orange;
+border:none
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* articles */
+.art1{
+    font-size: 9ch;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    transition: 2s ease-in-out;
+}
+.art1:hover{
+    padding-bottom: 1%;
+    transform: scale(1.1);
+
+}
+.art2{
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2%;
+}
+.formcontainer{
+    width: 90%;
+    height: 650px;
+    background-color: rgb(15, 15, 19);
+    background:linear-gradient(black gray);
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mainform{
+
+    width: 500px;
+    height: 500px;
+    border: 1px solid white;
+
+}
+.loglabel{
+    margin: 8% 0;
+    font-size: 2.4em;
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+}
+.username{
+    width: 85%;
+    height: 50px;
+    padding-left: 3%;
+    margin-top: 7%;
+    margin-left: 7%;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family:serif ;
+    color: black;
+    border-radius: 7px;
+
+}
+.password{
+    width: 85%;
+    height: 50px;
+    padding-left: 3%;
+    margin-top: 6%;
+    margin-left: 7%;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family:serif;
+    color: black;
+    border-radius: 7px;
+}
+.Checkbox{
+    width: 20px;
+    height: 20px;
+    margin-left: 7%;
+    margin-top: 7%;
+    padding-left: 3%;
+}
+.remember{
+    margin-top: 7%;
+    font-size: 1.3em;
+}
+.loginbut{
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-top: 12%;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 30px;
+    width: 80%;
+    height: 50px;
+    background-color: transparent;
+    border-color:rgb(223, 130, 55);
+    
+}
+.loginbut:hover{
+    background-color: rgb(223, 130, 55);
+    color: black;
+    border-color: black;
+
+}
+
+/* .loginbut{
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-top: 12%;
+    margin-left: 10%;
+    text-align: center;
+    border: 1.5px solid orange;
+    border-radius: 30px;
+    width: 80%;
+    padding-top: 10px;
+    height: 50px;
+   
+} */
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* copyrights */
+.copyright{
+    background-color:black;
+    width:100%;
+    height:100px;
+    display: flex;
+    border-top: 1px solid white;
+    border-left:1px solid white;
+    justify-content:space-between;
+}
+.text{
+    margin: 3% 3%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------------------------------------------- */

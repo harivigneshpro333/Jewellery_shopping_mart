@@ -1,0 +1,354 @@
+/* general Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+    color: white;
+}
+body{
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0,1.0)),url("./background/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        mix-blend-mode: exclusion;
+       
+    }
+    
+/* head1 */
+.head1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.log{
+    color:white ;
+    border: 5px dashed white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.0em;
+    height: 50px;
+    width: 80px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+ .title{
+    margin-top: 10px;
+    margin-left: 1%;
+    font-size: 1.7em;
+    transition: 0.4s ease-in-out;
+}
+/* nav Styles */
+a{
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+
+}
+li{
+list-style-type: none;
+font-size: 1.2em;
+padding-top: 1.5em;
+padding-left: 1.5em;
+}
+nav ol {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+}
+
+.log:hover{
+    color:orange;
+    border-color:orange ;
+    box-shadow: 3px 0px 4px White;
+}
+.cart{
+    font-size: 1.1em;
+    margin:0; 
+    transition: 0.4s ease-in-out;
+    
+}
+.last{
+    margin-left: 30%;
+
+}
+ol{
+    padding-left: 3%;
+}
+sup{
+    color: orange;
+}
+a:hover,.title:hover{
+color:orange;
+border:none
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* article */
+.article{
+    
+    height: 600px;
+    width:90%;
+    margin: 3% 5% ;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9),rgba(233, 0, 0, 0.1)),url("./background/ring8.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 2s ease-in-out;
+    }
+.article:hover{
+    padding-top: 2%;
+}
+.article_body{
+    height: auto;
+    font-size: 3.0em;
+    font-weight: bolder;
+    padding-top: 15%;
+    padding-left: 56%;
+    color: rgba(255, 255, 255,1);
+}
+.article:hover{
+    opacity: 0.8;
+}
+.article_body h4{
+    padding-top: 3%;
+    font-size: 0.7em;
+    font-weight: bold;
+    
+}
+.article_body p{
+    padding-top: 6%;
+    font-size: 0.5em;
+    font-weight: lighter;
+}
+.shopbut{
+
+    font-size: 0.4em;
+    margin-top: 10%;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    padding-top: 10px;
+}
+.shopbut:hover{
+    background-color: orangered;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* section */
+.section{
+    width:90%;
+    margin: 2% 5% ;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery1{
+    background-image: url(./background/necklace5.jpg);
+    opacity: 0.9;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    width:32%;
+    height:550px;
+    margin: 0;
+    cursor: pointer;
+    mix-blend-mode: multiply;
+    text-align: center;
+    padding-top:7% ;
+    transition: 3s all ease-in-out
+
+}
+.gallery1:hover,.gallery2:hover,.gallery3:hover,.gallery4:hover{
+    transform: scale(0.9);
+}
+.gallery1 h4{
+    transition: 2s ease-in-out;
+    font-size: 1.9em;
+    font-weight: bolder;
+    line-height: 1.0em;
+}
+.gallery1 h4:hover{
+    padding-top: 1%;
+}
+.gallery1 p{
+    font-weight: bold;
+    font-size:1.2em;
+    padding-top: 5%;
+}
+.galbut1{
+    margin-top: 37%;
+    margin-left: 25%;
+    padding-top: 13px;
+    width: 50%;
+    height: 10%;
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+
+.gallery2{
+
+    background-image:linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.3)),url("./background/diamond1.jpg");
+    /* background-image: url(./background/diamond1.jpg); */
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 66%;
+    height: 550px;
+    margin: 0;
+    mix-blend-mode: multiply;
+    transition: 3s all ease-in-out
+
+
+}
+.gallery2 h3{
+    text-align: center;
+    font-size: 5ch;
+    margin-top: 4%;
+}
+.galbut2{
+    margin-top: 5%;
+    margin-left: 39%;
+    padding-top:12px;
+    text-align: center;
+    width: 22%;
+    height: 8%;
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+.gallery3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)),url("./background/ring6.jpg"); 
+    opacity: 0.9;
+    mix-blend-mode:difference;
+    background-repeat: no-repeat;
+    background-size:cover;    
+    width: 66%;
+    height: 500px;
+    margin: 2% 0;
+    transition: 3s all ease-in-out
+
+}
+.gallery3 h3{
+    font-size: 2.8em;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 53%;
+    font-weight: bolder;
+}
+.galbut3{
+    border: 2px solid goldenrod;
+    padding-top: 10px;
+    width: 22%;
+    height: 8%;
+    margin-top: 5%;
+    margin-left:5% ;
+    border-radius: 25px;
+    text-align: center;
+}
+.gallery4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)),url("./background/men3.jpg");
+    opacity: 1.0;
+    mix-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:30%;
+    height:500px;
+    margin: 2% 0%;
+    transition: 3s all ease-in-out
+
+}
+.gallery4 h2{
+    font-size: 2.9em;
+    font-weight: bolder;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+.gallery4 p{
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 3%;
+    margin-left: 10%;
+}
+.galbut4{
+    border: 2px solid goldenrod;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-top:7% ;
+    width: 50%;
+
+    font-size: 1.3em;
+    height: 10%;
+    text-align: center;
+    padding-top: 12px;
+
+}
+.galbut1:hover,.galbut2:hover,.galbut3:hover,.galbut4:hover{
+    background-color: orangered;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+
+/* footer */
+.footer{
+    background-color:rgb(216, 187, 21);
+    display: flex;
+    padding: 0;
+    width: 90%;
+    justify-content: space-around;
+    height: 150px;
+    margin: 1% 5%;
+}
+
+.footertext1  {
+    font-size: 2.6em;
+    font-weight: bolder;
+    color: black;
+    margin-left: 1%;
+    width: 40%;
+    margin-top: 2%;
+}
+.footertext2{
+    font-size: 1.4em;
+    color: black;
+    font-weight: lighter;
+    margin-top:3%;
+    width:25%;
+    font-family:Verdana, Tahoma, sans-serif
+}
+.footerbut{
+    border:2px solid black;
+    border-radius: 25px;
+    width: 12%;
+    height: 30%;
+    background-color: black;
+    padding-top:10px;
+    padding-left: 2%;
+    margin-top:3% ;
+    font-size: 1.1em;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* copyrights */
+.copyright{
+    background-color:black;
+    width:100%;
+    height:100px;
+    display: flex;
+    border-top: 1px solid white;
+    border-left:1px solid white;
+    justify-content:space-between;
+}
+.text{
+    margin: 3% 3%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------------------------------------------- */

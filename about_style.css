@@ -1,0 +1,313 @@
+/* general Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+    color: white;
+}
+body{
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0,1.0)),url("./background/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+       
+    }
+    
+/* head1 */
+.head1{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.log{
+    color:white ;
+    border: 5px dashed white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.0em;
+    height: 50px;
+    width: 80px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+ .title{
+    margin-top: 10px;
+    margin-left: 1%;
+    font-size: 1.7em;
+    transition: 0.4s ease-in-out;
+}
+/* nav Styles */
+a{
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+
+}
+li{
+list-style-type: none;
+font-size: 1.2em;
+padding-top: 1.5em;
+padding-left: 1.5em;
+}
+nav ol {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+}
+
+.log:hover{
+    color:orange;
+    border-color:orange ;
+    box-shadow: 3px 0px 4px White;
+}
+.cart{
+    font-size: 1.1em;
+    margin:0; 
+    transition: 0.4s ease-in-out;
+    
+}
+.last{
+    margin-left: 29%;
+
+}
+ol{
+    padding-left: 3%;
+}
+sup{
+    color: orange;
+}
+a:hover,.title:hover{
+color:orange;
+border:none
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------- */
+/* article */
+
+.article_sec{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("./background/aboutgal.jpg");
+    opacity: 1.0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3% 5% 0 5%;
+    width: 90%;
+    height: 600px;
+}
+.main_txt{
+    font-size: 8ch;
+    width: 50%;
+    padding-top: 4%;
+    margin-left: 53%;
+    font-weight: bolder;
+    transition: 2s ease-in-out;
+
+}
+/* padding animation */
+.main_txt:hover{
+    padding-top: 2px;
+}
+.article hr{
+    width:10%;
+    height: 2px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    margin-top: 1%;
+    margin-left: 54%;
+}
+.para_text{
+    width: 48%;
+    margin-left: 54%;
+    font-size:3ch; 
+    padding-top: 3%;
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+/* section  */
+.section{
+    margin: 0;
+    padding: 0;
+}
+.article1{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url("./background/aboutsecimg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 5% 0% 5%;
+    width: 90%;
+    height:550px;
+}
+.content{
+    padding-top: 10%;
+    margin-left: 8%;
+    width:56%;
+}
+.history{
+    font-size: 1.4em;
+    font-weight: bold;
+    transition: 2s ease-in-out;
+}
+.period{
+    padding-top: 3%;
+    font-size:8ch;
+    font-weight: bolder;
+    transition: 2s ease-in-out;
+}
+.period:hover{
+    margin-top: 2%;
+}
+
+.para_text2{
+    padding-top: 4%;
+    font-size: 1.4em;
+    font-weight: 200;
+    width: 85%;
+}
+/* logo section  */
+.article2{
+    
+    background-color: rgb(15, 15, 19);
+    margin: 0 5% 0% 5%;
+    padding: 0;
+    width: 90%;
+    height: 300px;
+   
+}
+.headline{
+    font-size: 2.0em;
+    margin-left: 40%;
+    padding-top: 7%;
+}
+.icons{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    margin-left: 0;
+    
+}
+.icon{
+    padding-left: 5%;
+    letter-spacing: 0.3em;
+    stroke-width: 1px;
+    font-weight: bolder;
+    transition: 2s ease-in-out;
+}
+.icon:hover{
+    padding-top: 1%;
+    transform: scale(1.2);
+}
+/* -------------------------------------------------------------------------------------------- ---------------------*/
+
+/* citizen  golden membership footers */
+.footers{
+    background-color:rgb(216, 187, 21);
+    display: flex;
+    padding: 0;
+    width: 90%;
+    justify-content: space-around;
+    height: 150px;
+    margin: 0% 5%;
+}
+
+.footertexts1  {
+    font-size: 2.6em;
+    font-weight: bolder;
+    color: black;
+    margin-left: 1%;
+    width: 40%;
+    margin-top: 3%;
+}
+.footertexts2{
+    font-size: 1.4em;
+    color: black;
+    font-weight: lighter;
+    margin-top:4%;
+    width:25%;
+    font-family:Verdana, Tahoma, sans-serif
+}
+
+.footerbuts{
+    border:2px solid black;
+    border-radius: 25px;
+    width: 12%;
+    height: 30%;
+    background-color: black;
+    padding-top:10px;
+    padding-left: 2%;
+    margin-top:4% ;
+    font-size: 1.1em;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* video footers */
+.footers1{
+    /* background-color: black; */
+    background-color:  rgb(15, 15, 19);
+    width:90%;
+    height:500px;
+    margin:0% 5% ;
+    display: flex;
+    
+}
+.text{
+    width: 45%;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 5%;
+    padding-left: 4%;
+    transition: 2s ease-in-out;
+}
+.text:hover{
+    padding-top: 1%;
+}
+.con1{
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.con2{
+    font-size: 5ch;
+    padding-top: 5%;
+    font-weight: bolder;
+}
+.con3{
+font-size: 1.6em;
+padding-top: 5%;
+}
+.footbut2{
+    border: 2px solid white;
+    font-size: 1.0em;
+    font-weight: bolder;
+    margin-top: 8%;
+    width: 30%;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.footbut2:hover{
+    background-color: orangered;
+}
+.video{
+    width: 55%;
+    padding-top: 10%;
+    padding-left: 0%;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* copyrights */
+.copyright{
+    background-color:black;
+    width:100%;
+    height:100px;
+    display: flex;
+    margin-top: 5%;
+    border-top: 1px solid white;
+    border-left:1px solid white;
+    justify-content:space-between;
+}
+.copytext{
+    margin: 3% 3%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

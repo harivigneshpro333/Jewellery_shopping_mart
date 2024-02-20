@@ -1,0 +1,231 @@
+/* general Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+    color: white;
+}
+body{
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0,1.0)),url("./background/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+/* head1 */
+.head1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%; 
+    
+}
+.log{
+    color:white ;
+    border: 5px dashed white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.0em;
+    height: 50px;
+    width: 80px;
+    transition: 2s ease-in-out;
+    cursor: pointer;
+
+}
+/* nav Styles */
+a{
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+
+}
+li{
+list-style-type: none;
+font-size: 1.1em;
+padding-top: 1.5em;
+padding-bottom:1.5em ;
+padding-left: 1.6em;
+}
+
+nav ol {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -40px;
+    margin-top: 2%;
+    background-color:rgb(15, 15, 19);
+    width: auto;
+    
+}
+.log:hover{
+    color:orange;
+    border-color:orange ;
+    box-shadow: 3px 0px 4px White;
+}
+.cart{
+    width: 70px     ;
+    padding:10px 20px;
+    transition: 2s ease-in-out;
+}
+.last{
+    margin-left: 32%;
+}
+ol{
+    padding-left: 6%;
+}
+sup{ 
+    color: orange;
+}
+a:hover{
+color:orange;
+border:none
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+.article_sec{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("./background/aboutgal.jpg");
+    opacity: 1.0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3% 5% 2% 5%;
+    width: 90%;
+    height: 600px;
+    
+}
+.main_txt{
+    font-size: 10ch;
+    width: 50%;
+    padding-top: 10%;
+    margin-left: 53%;
+    font-weight: bolder;
+    transition: 2s ease-in-out;
+}
+/* padding animation */
+.main_txt:hover{
+    padding-top: 2px;
+}
+.middle_text{
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-left: 54%;
+    padding-top: 2%;
+}
+.article hr{
+    width:10%;
+    height: 2px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    margin-top: 1%;
+    margin-left: 54%;
+}
+.para_text{
+    width: 48%;
+    margin-left: 54%;
+    font-size:3ch; 
+    padding-top: 3%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* article2 */
+
+/* citizen  golden membership footers */
+.article2{
+    background-color:rgb(216, 187, 21);
+    display: flex;
+    padding: 0;
+    width: 90%;
+    justify-content: space-around;
+    height: 150px;
+    margin: 0% 5% 2% 5%;
+}
+
+.articletexts1  {
+    font-size: 2.6em;
+    font-weight: bolder;
+    color: black;
+    margin-left: 1%;
+    width: 40%;
+    margin-top: 3%;
+}
+.articletexts2{
+    font-size: 1.4em;
+    color: black;
+    font-weight: lighter;
+    margin-top:4%;
+    width:25%;
+    font-family:Verdana, Tahoma, sans-serif
+}
+
+.article2buts{
+    border:2px solid black;
+    border-radius: 25px;
+    width: 12%;
+    height: 30%;
+    background-color: black;
+    padding-top:10px;
+    padding-left: 2%;
+    margin-top:4% ;
+    font-size: 1.1em;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
+/* map Section */
+.mapsection{
+    margin:0 5% 2% 5%;
+}
+/* =------------------------------------------------------------------------------------------------------ */
+.contact_foot{
+    width: 90%;
+    height: 220px;
+    background-color: rgb(15, 15, 19);
+    text-align: center;
+    margin: 0 5% 5% 5%;
+}
+.contacttext1{
+    padding-top: 3%;
+    font-size: 2.5em;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.big{
+font-size: 1.25em;
+}
+.small{
+    font-size: 0.8em;
+}
+.contacttext2{
+    padding-top: 1%;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+.logos{
+    padding-left: 3%;
+    transition: 1s ease-in-out;
+}
+.logos:hover{
+    cursor: pointer;
+    padding-top: 1%;
+    transform: scale(1.5);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* copyrights */
+.copyright{
+    background-color:black;
+    width:100%;
+    height:100px;
+    display: flex;
+    margin-top: 5%;
+    border-top: 1px solid white;
+    border-left:1px solid white;
+    justify-content:space-between;
+}
+.copytext{
+    margin: 3% 3%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

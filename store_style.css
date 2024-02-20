@@ -1,0 +1,230 @@
+/* general Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+    color: white;
+}
+body{
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0,1.0)),url("./background/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+/* head1 */
+.head1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%; 
+    
+}
+.log{
+    color:white ;
+    border: 5px dashed white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.0em;
+    height: 50px;
+    width: 80px;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+/* nav Styles */
+a{
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+
+}
+li{
+list-style-type: none;
+font-size: 1.1em;
+padding-top: 1.5em;
+padding-bottom:1.5em ;
+padding-left: 1.6em;
+}
+
+nav ol {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+    margin-top: 2%;
+    background-color:rgb(15, 15, 19);
+    width: auto;
+}
+.log:hover{
+    color:orange;
+    border-color:orange ;
+    box-shadow: 3px 0px 4px White;
+}
+.cart{
+    width: 70px     ;
+    padding:10px 20px;
+    transition: 0.4s ease-in-out;
+}
+.last{
+    margin-left: 28%;
+}
+ol{
+    padding-left: 6%;
+}
+sup{ 
+    color: orange;
+}
+a:hover{
+color:orange;
+border:none
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* article */
+.Section{
+    width: 85%;
+    height: 1000px;
+    margin: 0 7.5% 2.5% 7.5%;
+    padding-bottom: 4%;
+    background-color:rgb(15, 15, 19);
+
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/* container1 */
+.container1{
+    margin: 3%  0% 0% 0%;
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color:rgb(15, 15, 19); */
+
+}
+.fillog{
+    color: white;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border: 2px solid orange;
+    border-radius: 25px;
+    text-align: center;
+    margin-top:20px ;
+    margin-left: 2.5%;
+    padding-top: 10px; 
+    transition: 0.4s ease-in-out;
+
+}
+.fillog:hover{
+    background-color: orangered;
+    border: 2px solid black;
+
+}
+.label1{
+    padding-left: 2.7%;
+    margin-top: 2.7%;
+    font-size: 1.2em;
+    font-weight: 400;
+    word-spacing:0.4em;
+
+}
+.dropdown{
+    background-color: transparent;
+    height: 40px;
+    width: 200px;
+    margin-top:2%;
+    margin-left: 52%;
+    font-size: 1.2em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+
+}
+.opt{
+    color: black;
+    font-weight: bold;
+
+}
+option{
+    background-color: transparent;
+}
+.dropdown:hover{
+    border: 2px dotted black;
+    color: orangered;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/* container2 */
+.container2{
+    width: 95%;
+    height:820px;
+    margin:0 2.5%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.product{
+
+    width: 255px;
+    height: 400px;
+    margin:1.5% 0%;
+    position: relative;
+    display: flex;
+    background-color: rgb(15, 15, 19);
+    border: 2px solid white;
+    
+}
+.storeimg{
+    width: 251px;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: (contrast(2%),blur(1%),brightness(10%),saturate(20%));
+    transition: 0.5s ease-in-out;
+}
+.storeimg:hover{
+    transform: scale(0.9);
+}
+.storeitem{
+    position: absolute;
+    top:289px;
+    left:26%;
+    width: auto;
+    text-align: center;
+    font-size: 1.1em;    
+}
+.price{
+    margin-left: 20%;
+}
+.stars{
+    padding-top: 1.5em;
+    padding-bottom: 0.4em;
+    letter-spacing: 0.3em;
+    cursor: pointer;
+    transition: fill 3s ease-in-out;
+}
+.stars i:hover{
+    color: orangered;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* copyrights */
+.copyright{
+    background-color:black;
+    width:100%;
+    height:100px;
+    display: flex;
+    border-top: 1px solid white;
+    border-left:1px solid white;
+    justify-content:space-between;
+}
+.text{
+    margin: 3% 3%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
