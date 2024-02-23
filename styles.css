@@ -94,7 +94,8 @@ border:none
     width:90%;
     margin: 3% 5% ;
     background-image:linear-gradient(rgba(0, 0, 0, 0.9),rgba(233, 0, 0, 0.1)),url("./background/ring8.jpg");
-    opacity: 0.9;
+    background-image:linear-gradient(rgb(15,15,19),(black)),url("./background/ring8.jpg");
+    mix-blend-mode: none;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
