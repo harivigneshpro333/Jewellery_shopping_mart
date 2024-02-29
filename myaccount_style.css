@@ -7,10 +7,11 @@
     color: white;
 }
 body{
-        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0,1.0)),url("./background/background.jpg");
+        background-image:linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0,1.0)),url("./background/backtemp.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        backdrop-filter: blur(10px);
     }
 
 /* head1 */
@@ -43,7 +44,7 @@ li{
 list-style-type: none;
 font-size: 1.1em;
 padding-top: 1.5em;
-padding-bottom:1.5em ;
+padding-bottom: 1.5em;
 padding-left: 1.6em;
 }
 
@@ -77,6 +78,25 @@ sup{
 a:hover{
 color:orange;
 border:none
+}
+
+/* menubar */
+.menuline{
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.menu_bar{
+    background-color: orangered;
+    border-radius: 5px;
+    width: 45px;
+    height: 35px;
+    padding-top: 10px;
+    padding-left:10px;
+    cursor:pointer;
+    margin-top: 2%;
+    display: none;
 }
 /* --------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------- */
@@ -180,21 +200,6 @@ border:none
     border-color: black;
 
 }
-
-/* .loginbut{
-    font-size: 1.4em;
-    font-weight: 300;
-    margin-top: 12%;
-    margin-left: 10%;
-    text-align: center;
-    border: 1.5px solid orange;
-    border-radius: 30px;
-    width: 80%;
-    padding-top: 10px;
-    height: 50px;
-   
-} */
-
 /* ------------------------------------------------------------------------------------------------------------------------ */
 /* copyrights */
 .copyright{
@@ -212,3 +217,87 @@ border:none
     font-weight: bold;
 }
 /* -------------------------------------------------------------------------------------------------------- */
+@media all and (min-width:150px) and (max-width:900px)
+    {
+/* header */
+    .head1{
+        justify-content: flex-start;
+        padding: 2% 3%;
+        background-color: rgb(15,15,19);
+        width: 100%;
+        margin: 0 0%;
+        margin-top: 1%;
+    }
+    ol{
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: rgb(15, 15, 19);
+    }
+
+    li{
+        font-size: 1.1em;
+        padding-left: 0;
+        padding-top:0em;
+        margin-top: 0.8em;
+        margin-left: 0;
+        padding-bottom: 1%;
+        transition: 1.5s ease-in-out;
+    }
+    li:hover{
+        border: 2px solid white ;
+        padding-left: 10%;
+        z-index: 2;
+        background-color: orangered;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .last{
+        margin-left: 0;
+    }
+    .lists{
+        display: none;
+    } 
+    .menu_bar{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 83%;
+    }
+    .show_menu{
+        display: block;
+    }
+    
+/* ------------------------------------------------------------------------------------------------------------- */
+    /* article and sections */
+    .artcle{
+        font-size: 0.5em;
+    }
+    .art1{
+        font-size:2.8em;
+    }
+    .art2{
+        font-size: 1.6em;
+    }
+    /* section */
+    .formcontainer{
+        width: 96%;
+        margin:2% 2%;
+        height: 500px;
+
+    }
+    .mainform{
+        width: 95%;
+        height: 80%;
+        font-size: 0.7em;
+    }
+    /* copyrights */
+    .copyright{
+        font-size: 0.4em;
+        height: 60px;
+
+    }
+}

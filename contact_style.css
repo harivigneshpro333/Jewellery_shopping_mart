@@ -7,10 +7,11 @@
     color: white;
 }
 body{
-        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0,1.0)),url("./background/background.jpg");
+        background-image:linear-gradient(rgba(0, 0, 0, 0.267),rgba(0, 0, 0,1.0)),url("./background/backtemp.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        backdrop-filter: blur(10px);
     }
 
 /* head1 */
@@ -78,6 +79,24 @@ sup{
 a:hover{
 color:orange;
 border:none
+}
+/* menubar */
+.menuline{
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.menu_bar{
+    background-color: orangered;
+    border-radius: 5px;
+    width: 45px;
+    height: 35px;
+    padding-top: 10px;
+    padding-left:10px;
+    cursor:pointer;
+    margin-top: 2%;
+    display: none;
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------- */
 .article_sec{
@@ -229,3 +248,148 @@ font-size: 1.25em;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media all and (min-width:150px) and (max-width:900px)
+    {
+/* header */
+    .head1{
+        justify-content: flex-start;
+        padding: 2% 3%;
+        background-color: rgb(15,15,19);
+        width: 100%;
+        margin: 0 0%;
+        margin-top: 1%;
+    }
+    ol{
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: rgb(15, 15, 19);
+    }
+
+    li{
+        font-size: 1.2em;
+        padding-left: 0;
+        padding-top:0em;
+        margin-top: 0.8em;
+        margin-left: 0;
+        padding-bottom: 1%;
+        transition: 1.5s ease-in-out;
+    }
+    li:hover{
+        border: 2px solid white ;
+        padding-left: 10%;
+        z-index: 2;
+        background-color: orangered;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+    .last{
+        margin-left: 0;
+    }
+    .lists{
+        display: none;
+    } 
+    .menu_bar{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 83%;
+    }
+    .show_menu{
+        display: block;
+    }
+/* ------------------------------------------------------------------------------------------------------- */
+/* article img */
+    .article_sec{
+        width: 94%;
+        margin: 3% 3%;
+        background-size:100% 180px ;
+        height: 180px;
+        
+    }
+    .main_txt{
+        padding-top: 14%;
+        margin-left:3%;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .middle_text{
+        padding-top: 3%;
+        margin-left: 3%;
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    .article hr{
+        margin-top: 3%;
+        margin-left: 3%;
+        width: 20%;
+    }
+    .para_text{
+        margin-left: 3%;
+        width: 45%;
+        font-size: 0.4rem;
+    }
+/* ------------------------------------------------------------------------------------------------------- */
+
+    /* yellow Footer */
+/* footer sec */
+    .article2{
+        width: 94%;
+        margin: 1% 3%;
+        font-size: 0.4em;
+        height: 70px;
+   }
+   .articletexts2{
+        padding-top: 1%;
+        width: 30%;
+        font-size: 2.0em;
+   }
+   .article2buts{
+        margin-top: 8%;
+        text-align: center;
+        padding-top: 5px;
+        width: 21%;
+   }
+/* ------------------------------------------------------------------------------------------------------- */
+/* map Sec */
+   .mapsection{
+    width: 94%;
+    margin: 3% 3%;
+    height: 180px;
+   }
+   iframe{
+    width: 100%;
+    height: 180px;
+   }
+/* ------------------------------------------------------------------------------------------------------- */
+/* contact no */
+     .contact_foot{
+        width: 94%;
+        margin: 3% 3%;
+        font-size:0.5em;
+        height: 100px;
+     }
+     .logos{
+        padding-top: 5%;
+        margin-left: 4%;
+     }
+/* ------------------------------------------------------------------------------------------------------- */
+/* copyright */
+    .copyright{
+        width: 100%;
+        font-size: 0.4em;
+        height: 60px;
+        
+}      
+    .copytext1{
+        width: 100%;
+        margin-left: 45%;
+    }
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+}

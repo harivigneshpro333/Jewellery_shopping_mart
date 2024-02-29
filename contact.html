@@ -7,7 +7,7 @@
 <!--links sec  -->
     <link rel="stylesheet" href="contact_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="Cart_styles.css">
 </head>
 <body>
 <!-- header -->
@@ -27,20 +27,72 @@
                     <li><a href="necklace.html">Necklace</a></li>
                     <li><a href="myaccount.html">Myaccount</a></li>
                     <li><a href="#">Contact us</a></li>
-                    <li class="last"><a class="cart" href="Cart.html">Cart&nbsp; <i class="fa-solid fa-cart-shopping"></i> <sup>0</sup></a></li>
-                
+                    <li class="last" onclick=sideview()><a class="cart" id="toggle">Cart&nbsp; <i class="fa-solid fa-cart-shopping"></i> <sup>0</sup></a></li>
+                         
                 </ol>
         </nav>
+        <div class="menu_bar">
+            <div class="menuline"></div>
+            <div class="menuline"></div>
+            <div class="menuline"></div>
+        </div>
     </div>
 </div>
+
+<!-- cart Popup -->
+<div class="cart_window">
+    <div class="shoplabel">
+        <p><a href="#">Shopping Cart</a></p>
+        <p class="exit" onclick=sidenone()><a>X</a></p>
+    </div>
+    <div class="shopping_products"><a>No Products in the cart.</a></div>
+    <div class="shopping_but"><a href="store.html">CONTINUE SHOPPING</a></div>
+</div>
+
+<!-- Cart View ok Right corner -->
+<script>
+    const shopcart=document.querySelector('#toggle')
+    const shopcartview=document.querySelector('.cart_window')
+    shopcart.addEventListener('click' , ()=>{
+        shopcartview.classList.toggle("showcartview")
+    }) 
+
+// use fuction methods to work As view and None to Cart Page
+    function sidenone(){
+        const view=document.querySelector('.last')
+        const hidemenu =document.querySelector('.cart_window')
+        hidemenu.style.display='none'
+        view.style.display='block'
+
+    }
+   function sideview(){
+    const hide=document.querySelector('.last')
+    const showmenu =document.querySelector('.cart_window')
+    showmenu.style.display='block'
+    hide.style.display='none'
+
+
+    } 
+
+</script>
+
+<!-- actionlistnern in.JS -->
+<script>
+    const men=document.querySelector('.menu_bar')
+    const menuview=document.querySelector('.lists')
+    men.addEventListener('click' , ()=>{
+        menuview.classList.toggle("show_menu")
+    }) 
+</script>
+
 <div class="contact_container">
 <!-- article1-->
     <div class="article_sec">
         <div class="article">
-            <p class="main_txt"><a href="#">contact us</a></p>
+            <p class="main_txt"><a>CONTACT US</a></p>
             <p class="middle_text">Get in Touch With Us for Any Custom Jewellery Design</p>
             <hr>
-            <p class="para_text"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis.amet consectetur adipisicing elit. Eveniet, debitis.</a>
+            <p class="para_text"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis.amet consectetur adipisicing elit. Eveniet, debitis.</a>
             </p>
         </div>
     </div>  
@@ -63,8 +115,8 @@
 <!-- contact footer -->
     <div class="contact_foot">
 <!-- footertext -->
-        <p class="contacttext1"><a href="#">+1 <span class="big">8</span> 00 12<span class="big">3</span> 45<span class="big">6</span></a></p>
-        <p class="contacttext2"><a href="#"><span class="small">12</span>W Broadway, NewYork 10007, <span class="big">U</span>SA</a></p>
+        <p class="contacttext1"><a>+1 <span class="big">8</span> 00 12<span class="big">3</span> 45<span class="big">6</span></a></p>
+        <p class="contacttext2"><a><span class="small">12</span>W Broadway, NewYork 10007, <span class="big">U</span>SA</a></p>
 <!-- logos -->
         <div class="logo">
             <p class="logos">
@@ -85,7 +137,7 @@
  <!-- copyright -->
 <div class="copyright">
     <p class="copytext">Copyright © 2024 Jewellery</p>
-    <p class="copytext">Powered by Jewellery</p>
+    <p class="copytext copytext1">Powered by Jewellery</p>
 </div>
 
 </body>
